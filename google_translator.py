@@ -1,6 +1,7 @@
 import time
+import os
 
-DELAY=2.0
+DELAY=3.0
 FILEPATH = 'test.txt'
 SOURCE = 'ko'
 TARGET = 'en'
@@ -142,4 +143,7 @@ def excecuteTranslation(infile, outfile, inlang, outlang, headless=True):
 
 
 if __name__ == "__main__":
-    excecuteTranslation(FILEPATH, f"{FILEPATH}_{SOURCE}-{TARGET}.txt", SOURCE, TARGET, False)
+    abspath = os.path.abspath(FILEPATH)
+    path = os.path.dirname(abspath)
+    name = '.'.join(os.path.basename(abspath).split('.')[:-1])
+    excecuteTranslation(abspath, f"{path}/{name}_{SOURCE}-{TARGET}.txt", SOURCE, TARGET, False)
