@@ -5,7 +5,9 @@ Requirements:
 4. selenium
 5. webdriver-manager
 
+```
 pip install -r requirements.txt
+```
 
 How to use:
 1. Select file path using FILEPATH variable (the file must be line seperated text file)
@@ -14,7 +16,7 @@ How to use:
 
 Result:
 1. Result file will be created at same directory of the input file
-2. Naming convention - <original_filename>_<sourcecode>-<targetcode>.txt
+2. Naming convention - <original_filename>_<source_language_code>-<target_language_code>.txt
 
 Warning:
 1. Seldomly, the result would be redundant. This particular result happens due to DELAY system increase delay. (or if this result happens too often, just tell me. I can just write better code for that.)
