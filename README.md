@@ -19,7 +19,7 @@ Result:
 Warning:
 1. Seldomly, the result would be redundant. This particular result happens due to DELAY system increase delay. (or if this result happens too often, just tell me. I can just write better code for that.)
 2. You must install library requirements.
-3. Do not run this code parallely. (You can, but not recommended)
+3. Do not run this code parallely. (You can if you really want but not recommended)
 
 Tips:
 1. The FILEPATH variable can be both absolute/relative path.
