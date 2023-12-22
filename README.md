@@ -5,6 +5,8 @@ requirements:
 4. selenium
 5. webdriver-manager
 
+pip install -r requirements.txt
+
 How to use:
 1. Select file path using FILEPATH variable (the file must be line seperated text file)
 2. Select source and target language code
